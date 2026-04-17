@@ -11,7 +11,8 @@ const CHAMPIONS = [
 
     // 추가 챔피언
     { name: '가렌', engName: 'Garen', role: '전사', lane: '탑', img: 'https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Garen.png', difficulty: '하' },
-    { name: '니달리', engName: 'Nidalee', role: '마법사/암살자', lane: '미드/정글', img: 'https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Nidalee.png', difficulty: '상' }
+    { name: '니달리', engName: 'Nidalee', role: '마법사/암살자', lane: '미드/정글', img: 'https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Nidalee.png', difficulty: '상' },
+    { name: '쓰레쉬', engName: 'Thresh', role: '서포터', lane: '바텀', img: 'https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Thresh.png', difficulty: '상' }
 ];
 
 const NEWS = [
@@ -66,12 +67,12 @@ function performSearch(query) {
 
     document.getElementById('searchKeywordDisplay').textContent = `"${query}"`;
 
-    // 챔피언 검색
+    //챔피언 검색
     const champResults = CHAMPIONS.filter(c =>
-        c.name.includes(q) ||
+        c.name.toLowerCase().includes(q) ||
         c.engName.toLowerCase().includes(q) ||
-        c.role.includes(q) ||
-        c.lane.includes(q)
+        c.role.toLowerCase().includes(q) ||
+        c.lane.toLowerCase().includes(q)
     );
 
     // 뉴스 검색

@@ -74,11 +74,6 @@
         </div>
     </nav>
 
-
-
-
-
-
     <!-- 히어로 배너 (Hero Banner) -->
     <section class="hero d-flex align-items-center justify-content-center text-center py-5">
         <div class="container">
@@ -95,8 +90,9 @@
         <p class="text-center mb-5">전투에 뛰어들기, 팀 지원, 또는 그 중간? 당신의 스타일을 선택하세요.</p>
 
         <div class="row g-4">
+
             <!-- Aatrox -->
-            <div class="col">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card bg-dark text-white border-secondary h-100">
                     <img src="https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Aatrox.png"
                         class="card-img-top" alt="아트록스">
@@ -134,7 +130,7 @@
 
 
             <!-- Sylas -->
-            <div class="col">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card bg-dark text-white border-secondary h-100">
                     <img src="https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Sylas.png"
                         class="card-img-top" alt="사일러스">
@@ -170,7 +166,7 @@
 
 
             <!-- Anivia -->
-            <div class="col">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card bg-dark text-white border-secondary h-100">
                     <img src="https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Anivia.png"
                         class="card-img-top" alt="애니비아">
@@ -208,7 +204,7 @@
 
 
             <!-- Briar -->
-            <div class="col">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card bg-dark text-white border-secondary h-100">
                     <img src="https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Briar.png"
                         class="card-img-top" alt="브라이어">
@@ -244,7 +240,7 @@
 
 
             <!-- Jax -->
-            <div class="col">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card bg-dark text-white border-secondary h-100">
                     <img src="https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Jax.png" class="card-img-top"
                         alt="잭스">
@@ -280,7 +276,7 @@
 
 
             <!-- Jinx -->
-            <div class="col">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card bg-dark text-white border-secondary h-100">
                     <img src="https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Jinx.png"
                         class="card-img-top" alt="징크스">
@@ -316,7 +312,7 @@
 
 
             <!-- Garen -->
-            <div class="col">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card bg-dark text-white border-secondary h-100">
                     <img src="https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Garen.png"
                         class="card-img-top" alt="가렌">
@@ -351,7 +347,7 @@
             </div>
 
             <!-- Nidalee -->
-            <div class="col">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card bg-dark text-white border-secondary h-100">
                     <img src="https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Nidalee.png"
                         class="card-img-top" alt="니달리">
@@ -387,8 +383,48 @@
                 </div>
             </div>
 
+            <!-- Thresh -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card bg-dark text-white border-secondary h-100">
+                    <img src="https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Thresh.png"
+                        class="card-img-top" alt="쓰레쉬">
+                    <div class="card-body">
+                        <h5 class="card-title">쓰레쉬 (Thresh)</h5>
+                        <p class="card-text small">역할: 서포터 / 난이도: 상</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0">
+                        <button class="btn btn-outline-light w-100" data-bs-toggle="modal"
+                            data-bs-target="#modalThresh">
+                            상세보기
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Thresh Modal -->
+            <div class="modal fade" id="modalThresh" tabindex="-1">
+                <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content bg-dark text-white border-secondary">
+                        <div class="modal-header border-secondary">
+                            <h5 class="modal-title">쓰레쉬(Thresh) 상세정보</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <div class="modal-body p-0" style="height: 65vh; background: #0a0e17;">
+                            <iframe src="modals/Thresh.html" frameborder="0"
+                                style="width: 100%; height: 100%;"></iframe>
+                        </div>
+
+                        <div class="modal-footer border-secondary">
+                            <button class="btn btn-outline-light" data-bs-dismiss="modal">닫기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
+
 
     <!-- 뉴스 섹션 (기존 유지) -->
     <section class="container my-5">
@@ -416,6 +452,7 @@
     </section>
 
 
+
     <!--===== 검색결과섹션(기본숨김) ===== -->
     <section id="searchResults">
         <!--키워드헤더-->
@@ -429,7 +466,8 @@
                     <!--왼쪽카테고리사이드바-->
                     <div class="col-md-3 col-lg-2 search-sidebar bg-white py-4">
                         <div class="px-3 mb-3"
-                            style="font-size:0.8rem; color:#999; text-transform:uppercase; letter-spacing:0.1em;">카테고리
+                            style="font-size:0.8rem; color:#999; text-transform:uppercase; letter-spacing:0.1em;">
+                            카테고리
                         </div>
                         <div class="search-category-item active" onclick="switchCategory('champion', this)">
                             챔피언<span class="count" id="champCount">(0)</span>
