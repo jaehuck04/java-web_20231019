@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>잭스 상세</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- LOL 스타일 커스텀 -->
+    <style>
+        body {
+            background-color: #0a0e17;
+            color: white;
+            padding: 1.5rem;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        h3,
+        h4 {
+            color: #c8aa6e;
+        }
+
+        .text-muted {
+            color: #a0a0a0 !important;
+        }
+
+        .list-group-item {
+            background: transparent;
+            border-color: #444;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row g-4">
+
+            <!-- 왼쪽: 이미지 + 기본 정보 -->
+            <div class="col-lg-5 text-center">
+                <img src="https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Jax.png"
+                    class="img-fluid rounded shadow-lg" alt="잭스" style="max-height: 480px; object-fit: contain;">
+
+                <div class="mt-3">
+                    <h3 class="mb-1">잭스 (Jax)</h3>
+                    <p class="text-muted fs-5">전사 / 난이도: 중</p>
+                </div>
+            </div>
+
+            <!-- 오른쪽: 스킬 + 스토리 -->
+            <div class="col-lg-7">
+                <h4 class="border-bottom border-secondary pb-2 mb-3">스킬</h4>
+                <ul class="list-group list-group-flush mb-4">
+                    <li class="list-group-item">패시브: 무기의 달인</li>
+                    <li class="list-group-item">Q: 도약 공격</li>
+                    <li class="list-group-item">W: 강화 타격</li>
+                    <li class="list-group-item">E: 반격</li>
+                    <li class="list-group-item">R: 무기 숙련</li>
+                </ul>
+
+                <h4 class="border-bottom border-secondary pb-2 mb-3">배경 스토리 요약</h4>
+                <p class="text-secondary lh-lg">
+                    잭스는 아이오니아의 마지막 생존 무기 달인으로,
+                    전쟁으로 인해 잃어버린 고향을 되찾기 위해 방랑하는 전사다.
+                    그는 압도적인 전투 실력과 독특한 무기를 사용해
+                    자신보다 강한 상대를 찾기 위해 끝없이 싸움을 이어간다.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
