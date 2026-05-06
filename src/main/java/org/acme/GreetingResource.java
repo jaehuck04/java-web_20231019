@@ -1,9 +1,11 @@
-package org.acme; //패키지
+package org.acme;
+//패키지
 
-import jakarta.ws.rs.GET; //import문
+import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
+//import문
 
 @Path("/hello") // 어노테이션
 public class GreetingResource { // 클래스 선언
