@@ -11,16 +11,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/toggle.js"></script>
-    <!-- <script src="js/test.js"></script> -->
-    <!-- <script src="js/test2.js"></script> -->
-
-    <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
-
-    <!-- <script>
-        window.onload = function () {
-            alert("메인 페이지 로딩 완료");
-        }
-    </script> -->
 </head>
 
 <body>
@@ -97,364 +87,188 @@
         <p class="text-center mb-5">전투에 뛰어들기, 팀 지원, 또는 그 중간? 당신의 스타일을 선택하세요.</p>
 
         <div class="row g-4">
-
             <!-- Aatrox -->
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="card bg-dark text-white border-secondary h-100">
-                    <img src="https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Aatrox.png"
-                        class="card-img-top" alt="아트록스">
+                <div class="card h-100 bg-dark text-white">
+                    <img src="http://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Aatrox.png"
+                        class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">아트록스 (Aatrox)</h5>
-                        <p class="card-text small">역할: 전사 / 난이도: 상</p>
+                        <p class="card-text">역할: 전사 / 난이도: 상</p>
                     </div>
-                    <div class="card-footer bg-transparent border-0">
-                        <button class="btn btn-outline-light w-100" data-bs-toggle="modal"
-                            data-bs-target="#modalAatrox">
-                            상세보기
-                        </button>
+                    <div class="card-footer">
+                        <button class="btn btn-outline-light w-100" onclick="openChampionModal('aatrox')">상세보기</button>
                     </div>
                 </div>
             </div>
-
-            <!-- Aatrox Modal -->
-            <div class="modal fade" id="modalAatrox" tabindex="-1">
-                <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
-                    <div class="modal-content bg-dark text-white border-secondary">
-                        <div class="modal-header border-secondary">
-                            <h5 class="modal-title">아트록스(Aatrox) 상세정보</h5>
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-                        </div>
-                        <div class="modal-body p-0" style="height: 65vh; background: #0a0e17;">
-                            <iframe src="modals/Aatrox.html" frameborder="0"
-                                style="width: 100%; height: 100%;"></iframe>
-                        </div>
-                        <div class="modal-footer border-secondary">
-                            <button class="btn btn-outline-light" data-bs-dismiss="modal">닫기</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
 
             <!-- Sylas -->
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="card bg-dark text-white border-secondary h-100">
-                    <img src="https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Sylas.png"
-                        class="card-img-top" alt="사일러스">
+                <div class="card h-100 bg-dark text-white">
+                    <img src="http://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Sylas.png"
+                        class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">사일러스 (Sylas)</h5>
-                        <p class="card-text small">역할: 전사 / 난이도: 상</p>
+                        <p class="card-text">역할: 전사 / 난이도: 상</p>
                     </div>
-                    <div class="card-footer bg-transparent border-0">
-                        <button class="btn btn-outline-light w-100" data-bs-toggle="modal" data-bs-target="#modalSylas">
-                            상세보기
-                        </button>
+                    <div class="card-footer">
+                        <button class="btn btn-outline-light w-100" onclick="openChampionModal('sylas')">상세보기</button>
                     </div>
                 </div>
             </div>
-
-            <!-- Sylas Modal -->
-            <div class="modal fade" id="modalSylas" tabindex="-1">
-                <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
-                    <div class="modal-content bg-dark text-white border-secondary">
-                        <div class="modal-header border-secondary">
-                            <h5 class="modal-title">사일러스(Sylas) 상세정보</h5>
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-                        </div>
-                        <div class="modal-body p-0" style="height: 65vh; background: #0a0e17;">
-                            <iframe src="modals/Sylas.html" frameborder="0" style="width: 100%; height: 100%;"></iframe>
-                        </div>
-                        <div class="modal-footer border-secondary">
-                            <button class="btn btn-outline-light" data-bs-dismiss="modal">닫기</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
 
             <!-- Anivia -->
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="card bg-dark text-white border-secondary h-100">
-                    <img src="https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Anivia.png"
-                        class="card-img-top" alt="애니비아">
+                <div class="card h-100 bg-dark text-white">
+                    <img src="http://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Anivia.png"
+                        class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">애니비아 (Anivia)</h5>
-                        <p class="card-text small">역할: 마법사 / 난이도: 상</p>
+                        <p class="card-text">역할: 마법사 / 난이도: 중</p>
                     </div>
-                    <div class="card-footer bg-transparent border-0">
-                        <button class="btn btn-outline-light w-100" data-bs-toggle="modal"
-                            data-bs-target="#modalAnivia">
-                            상세보기
-                        </button>
+                    <div class="card-footer">
+                        <button class="btn btn-outline-light w-100" onclick="openChampionModal('anivia')">상세보기</button>
                     </div>
                 </div>
             </div>
-
-            <!-- Anivia Modal -->
-            <div class="modal fade" id="modalAnivia" tabindex="-1">
-                <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
-                    <div class="modal-content bg-dark text-white border-secondary">
-                        <div class="modal-header border-secondary">
-                            <h5 class="modal-title">애니비아(Anivia) 상세정보</h5>
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-                        </div>
-                        <div class="modal-body p-0" style="height: 65vh; background: #0a0e17;">
-                            <iframe src="modals/Anivia.html" frameborder="0"
-                                style="width: 100%; height: 100%;"></iframe>
-                        </div>
-                        <div class="modal-footer border-secondary">
-                            <button class="btn btn-outline-light" data-bs-dismiss="modal">닫기</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
 
             <!-- Briar -->
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="card bg-dark text-white border-secondary h-100">
-                    <img src="https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Briar.png"
-                        class="card-img-top" alt="브라이어">
+                <div class="card h-100 bg-dark text-white">
+                    <img src="http://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Briar.png"
+                        class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">브라이어 (Briar)</h5>
-                        <p class="card-text small">역할: 전사 / 난이도: 중</p>
+                        <p class="card-text">역할: 전사 / 난이도: 중</p>
                     </div>
-                    <div class="card-footer bg-transparent border-0">
-                        <button class="btn btn-outline-light w-100" data-bs-toggle="modal" data-bs-target="#modalBriar">
-                            상세보기
-                        </button>
+                    <div class="card-footer">
+                        <button class="btn btn-outline-light w-100" onclick="openChampionModal('briar')">상세보기</button>
                     </div>
                 </div>
             </div>
-
-            <!-- Briar Modal -->
-            <div class="modal fade" id="modalBriar" tabindex="-1">
-                <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
-                    <div class="modal-content bg-dark text-white border-secondary">
-                        <div class="modal-header border-secondary">
-                            <h5 class="modal-title">브라이어(Briar) 상세정보</h5>
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-                        </div>
-                        <div class="modal-body p-0" style="height: 65vh; background: #0a0e17;">
-                            <iframe src="modals/Briar.html" frameborder="0" style="width: 100%; height: 100%;"></iframe>
-                        </div>
-                        <div class="modal-footer border-secondary">
-                            <button class="btn btn-outline-light" data-bs-dismiss="modal">닫기</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
 
             <!-- Jax -->
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="card bg-dark text-white border-secondary h-100">
-                    <img src="https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Jax.png" class="card-img-top"
-                        alt="잭스">
+                <div class="card h-100 bg-dark text-white">
+                    <img src="http://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Jax.png" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">잭스 (Jax)</h5>
-                        <p class="card-text small">역할: 전사 / 난이도: 중</p>
+                        <p class="card-text">역할: 전사 / 난이도: 중</p>
                     </div>
-                    <div class="card-footer bg-transparent border-0">
-                        <button class="btn btn-outline-light w-100" data-bs-toggle="modal" data-bs-target="#modalJax">
-                            상세보기
-                        </button>
+                    <div class="card-footer">
+                        <button class="btn btn-outline-light w-100" onclick="openChampionModal('jax')">상세보기</button>
                     </div>
                 </div>
             </div>
-
-            <!-- Jax Modal -->
-            <div class="modal fade" id="modalJax" tabindex="-1">
-                <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
-                    <div class="modal-content bg-dark text-white border-secondary">
-                        <div class="modal-header border-secondary">
-                            <h5 class="modal-title">잭스(Jax) 상세정보</h5>
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-                        </div>
-                        <div class="modal-body p-0" style="height: 65vh; background: #0a0e17;">
-                            <iframe src="modals/Jax.html" frameborder="0" style="width: 100%; height: 100%;"></iframe>
-                        </div>
-                        <div class="modal-footer border-secondary">
-                            <button class="btn btn-outline-light" data-bs-dismiss="modal">닫기</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
 
             <!-- Jinx -->
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="card bg-dark text-white border-secondary h-100">
-                    <img src="https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Jinx.png"
-                        class="card-img-top" alt="징크스">
+                <div class="card h-100 bg-dark text-white">
+                    <img src="http://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Jinx.png"
+                        class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">징크스 (Jinx)</h5>
-                        <p class="card-text small">역할: 원거리 딜러 / 난이도: 중</p>
+                        <p class="card-text">역할: 원거리 딜러 / 난이도: 중</p>
                     </div>
-                    <div class="card-footer bg-transparent border-0">
-                        <button class="btn btn-outline-light w-100" data-bs-toggle="modal" data-bs-target="#modalJinx">
-                            상세보기
-                        </button>
+                    <div class="card-footer">
+                        <button class="btn btn-outline-light w-100" onclick="openChampionModal('jinx')">상세보기</button>
                     </div>
                 </div>
             </div>
-
-            <!-- Jinx Modal -->
-            <div class="modal fade" id="modalJinx" tabindex="-1">
-                <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
-                    <div class="modal-content bg-dark text-white border-secondary">
-                        <div class="modal-header border-secondary">
-                            <h5 class="modal-title">징크스(Jinx) 상세정보</h5>
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-                        </div>
-                        <div class="modal-body p-0" style="height: 65vh; background: #0a0e17;">
-                            <iframe src="modals/Jinx.html" frameborder="0" style="width: 100%; height: 100%;"></iframe>
-                        </div>
-                        <div class="modal-footer border-secondary">
-                            <button class="btn btn-outline-light" data-bs-dismiss="modal">닫기</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
 
             <!-- Garen -->
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="card bg-dark text-white border-secondary h-100">
-                    <img src="https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Garen.png"
-                        class="card-img-top" alt="가렌">
+                <div class="card h-100 bg-dark text-white">
+                    <img src="http://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Garen.png"
+                        class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">가렌 (Garen)</h5>
-                        <p class="card-text small">역할: 전사 / 난이도: 하</p>
+                        <p class="card-text">역할: 전사 / 난이도: 하</p>
                     </div>
-                    <div class="card-footer bg-transparent border-0">
-                        <button class="btn btn-outline-light w-100" data-bs-toggle="modal" data-bs-target="#modalGaren">
-                            상세보기
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Garen Modal -->
-            <div class="modal fade" id="modalGaren" tabindex="-1">
-                <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
-                    <div class="modal-content bg-dark text-white border-secondary">
-                        <div class="modal-header border-secondary">
-                            <h5 class="modal-title">가렌(Garen) 상세정보</h5>
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-                        </div>
-                        <div class="modal-body p-0" style="height: 65vh; background: #0a0e17;">
-                            <iframe src="modals/Garen.html" frameborder="0" style="width: 100%; height: 100%;"></iframe>
-                        </div>
-                        <div class="modal-footer border-secondary">
-                            <button class="btn btn-outline-light" data-bs-dismiss="modal">닫기</button>
-                        </div>
+                    <div class="card-footer">
+                        <button class="btn btn-outline-light w-100" onclick="openChampionModal('garen')">상세보기</button>
                     </div>
                 </div>
             </div>
 
             <!-- Nidalee -->
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="card bg-dark text-white border-secondary h-100">
-                    <img src="https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Nidalee.png"
-                        class="card-img-top" alt="니달리">
+                <div class="card h-100 bg-dark text-white">
+                    <img src="http://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Nidalee.png"
+                        class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">니달리 (Nidalee)</h5>
-                        <p class="card-text small">역할: 암살자 / 난이도: 상</p>
+                        <p class="card-text">역할: 암살자 / 난이도: 상</p>
                     </div>
-                    <div class="card-footer bg-transparent border-0">
-                        <button class="btn btn-outline-light w-100" data-bs-toggle="modal"
-                            data-bs-target="#modalNidalee">
-                            상세보기
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Nidalee Modal -->
-            <div class="modal fade" id="modalNidalee" tabindex="-1">
-                <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
-                    <div class="modal-content bg-dark text-white border-secondary">
-                        <div class="modal-header border-secondary">
-                            <h5 class="modal-title">니달리(Nidalee) 상세정보</h5>
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-                        </div>
-                        <div class="modal-body p-0" style="height: 65vh; background: #0a0e17;">
-                            <iframe src="modals/Nidalee.html" frameborder="0"
-                                style="width: 100%; height: 100%;"></iframe>
-                        </div>
-                        <div class="modal-footer border-secondary">
-                            <button class="btn btn-outline-light" data-bs-dismiss="modal">닫기</button>
-                        </div>
+                    <div class="card-footer">
+                        <button class="btn btn-outline-light w-100" onclick="openChampionModal('nidalee')">상세보기</button>
                     </div>
                 </div>
             </div>
 
             <!-- Thresh -->
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="card bg-dark text-white border-secondary h-100">
-                    <img src="https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Thresh.png"
-                        class="card-img-top" alt="쓰레쉬">
+                <div class="card h-100 bg-dark text-white">
+                    <img src="http://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Thresh.png"
+                        class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">쓰레쉬 (Thresh)</h5>
-                        <p class="card-text small">역할: 서포터 / 난이도: 상</p>
+                        <p class="card-text">역할: 서포터 / 난이도: 상</p>
                     </div>
-                    <div class="card-footer bg-transparent border-0">
-                        <button class="btn btn-outline-light w-100" data-bs-toggle="modal"
-                            data-bs-target="#modalThresh">
-                            상세보기
-                        </button>
+                    <div class="card-footer">
+                        <button class="btn btn-outline-light w-100" onclick="openChampionModal('thresh')">상세보기</button>
                     </div>
                 </div>
             </div>
-
-            <!-- Thresh Modal -->
-            <div class="modal fade" id="modalThresh" tabindex="-1">
-                <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
-                    <div class="modal-content bg-dark text-white border-secondary">
-                        <div class="modal-header border-secondary">
-                            <h5 class="modal-title">쓰레쉬(Thresh) 상세정보</h5>
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-                        </div>
-
-                        <div class="modal-body p-0" style="height: 65vh; background: #0a0e17;">
-                            <iframe src="modals/Thresh.html" frameborder="0"
-                                style="width: 100%; height: 100%;"></iframe>
-                        </div>
-
-                        <div class="modal-footer border-secondary">
-                            <button class="btn btn-outline-light" data-bs-dismiss="modal">닫기</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- 뉴스 섹션 (기존 유지) -->
-    <section class="container my-5">
-        <h2 class="text-center mb-4 accent-red">최신 뉴스</h2>
-        <div class="row g-4">
-            <div class="col-md-6 col-lg-4">
-                <div class="card">
+            <!-- Yasuo -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 bg-dark text-white">
+                    <img src="http://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Yasuo.png"
+                        class="card-img-top">
                     <div class="card-body">
-                        <h5 class="card-title">새로운 챔피언 출시</h5>
-                        <p class="card-text">2026 루나 레벨 이벤트!</p>
-                        <a href="#" class="btn btn-outline-primary">더 보기</a>
+                        <h5 class="card-title">야스오 (Yasuo)</h5>
+                        <p class="card-text">역할: 전사 / 난이도: 상</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-outline-light w-100" onclick="openChampionModal('yasuo')">상세보기</button>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="card">
+
+            <!-- Ahri -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 bg-dark text-white">
+                    <img src="http://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Ahri.png"
+                        class="card-img-top">
                     <div class="card-body">
-                        <h5 class="card-title">패치 노트</h5>
-                        <p class="card-text">밸런스 업데이트.</p>
-                        <a href="#" class="btn btn-outline-primary">더 보기</a>
+                        <h5 class="card-title">아리 (Ahri)</h5>
+                        <p class="card-text">역할: 마법사 / 난이도: 중</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-outline-light w-100" onclick="openChampionModal('ahri')">상세보기</button>
                     </div>
                 </div>
             </div>
+
+            <!-- Darius -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 bg-dark text-white">
+                    <img src="http://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Darius.png"
+                        class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">다리우스 (Darius)</h5>
+                        <p class="card-text">역할: 전사 / 난이도: 중</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-outline-light w-100" onclick="openChampionModal('darius')">상세보기</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
         </div>
     </section>
 
@@ -500,6 +314,32 @@
             </div>
         </div>
     </section>
+
+    <!-- 공용 챔피언 모달 -->
+    <div class="modal fade" id="championModal" tabindex="-1">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content bg-dark text-white border-secondary">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title" id="modalTitle">챔피언 상세정보</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body p-0" style="height: 65vh; background: #0a0e17;">
+                    <iframe id="modalIframe" src="" frameborder="0" style="width: 100%; height: 100%;"></iframe>
+                </div>
+
+                <div class="modal-footer border-secondary">
+                    <button class="btn btn-outline-light" data-bs-dismiss="modal">닫기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 모달 관련 JS 파일들 -->
+    <script src="js/search.js"></script>
+    <script src="js/toggle.js"></script>
+    <script src="js/champions.js"></script>
+    <script src="js/modal.js"></script>
 
     <!-- 검색 javascript => 최하단에 배치! -->
     <script src="js/search.js"></script>

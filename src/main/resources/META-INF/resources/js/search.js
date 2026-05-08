@@ -8,12 +8,16 @@ const CHAMPIONS = [
     { name: '브라이어', engName: 'Briar', role: '전사', lane: '정글', img: 'https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Briar.png', difficulty: '중' },
     { name: '잭스', engName: 'Jax', role: '전사', lane: '탑', img: 'https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Jax.png', difficulty: '하' },
     { name: '징크스', engName: 'Jinx', role: '원거리딜러', lane: '원딜', img: 'https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Jinx.png', difficulty: '중' },
-
-    // 추가 챔피언
     { name: '가렌', engName: 'Garen', role: '전사', lane: '탑', img: 'https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Garen.png', difficulty: '하' },
     { name: '니달리', engName: 'Nidalee', role: '마법사/암살자', lane: '미드/정글', img: 'https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Nidalee.png', difficulty: '상' },
-    { name: '쓰레쉬', engName: 'Thresh', role: '서포터', lane: '바텀', img: 'https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Thresh.png', difficulty: '상' }
+    { name: '쓰레쉬', engName: 'Thresh', role: '서포터', lane: '바텀', img: 'https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Thresh.png', difficulty: '상' },
+
+    //챔피언 추가
+    { name: '야스오', engName: 'Yasuo', role: '전사', lane: '미드/탑', img: 'https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Yasuo.png', difficulty: '상' },
+    { name: '아리', engName: 'Ahri', role: '마법사', lane: '미드', img: 'https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Ahri.png', difficulty: '중' },
+    { name: '다리우스', engName: 'Darius', role: '전사', lane: '탑', img: 'https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Darius.png', difficulty: '중' }
 ];
+
 
 const NEWS = [
     { title: '새로운챔피언출시', desc: '2026 루나레벨이벤트! 신규챔피언과함께하는특별한시즌.', category: '게임업데이트' },
