@@ -1,5 +1,7 @@
 package org.acme.login;
 
+import jakarta.inject.Inject;
+import jakarta.transaction.Transactional;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
@@ -31,5 +33,4 @@ public class AuthResource {
 
                 .build();
     }
-
 }
