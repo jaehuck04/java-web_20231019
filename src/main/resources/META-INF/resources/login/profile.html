@@ -124,44 +124,88 @@
     </section>
 
     <!--사진업로드폼아래에추가-->
-    <hrclass="my-4">
-        <!--토글버튼-->
-        <button class="btnbtn-warning w-100 mb-2" type="button" data-bs-toggle="collapse"
-            data-bs-target="#updateFormArea" aria-expanded="false">
-            개인정보수정
-        </button>
-        <!--기본숨김→ 버튼클릭시펼쳐짐-->
-        <div class="collapse" id="updateFormArea">
-            <div class="card card-body bg-dark text-white border-secondary mt-2">
-                <!--수정결과메시지-->
-                <div id="updateMsg" class="alert d-none mb-3"></div>
-                <form id="updateForm" method="POST" action="/profile/update">
-                    <div class="mb-3 text-start">
-                        <label class="form-label">이메일</label>
-                        <input type="text" class="form-control" id="updateEmail" name="email"
-                            placeholder="example@email.com">
-                        <div class="invalid-feedback" id="updateEmailMsg"></div>
-                    </div>
-                    <div class="mb-3 text-start">
-                        <label class="form-label">연락처</label>
-                        <input type="text" class="form-control" id="updatePhone" name="phone"
-                            placeholder="010-0000-0000">
-                        <div class="invalid-feedback" id="updatePhoneMsg"></div>
-                    </div>
-                    <button type="button" class="btnbtn-warning w-100" onclick="validateAndUpdate()">
-                        수정완료
-                    </button>
-                </form>
-            </div>
+    <hr class="my-4">
+
+    <!--토글버튼-->
+    <button class="btn btn-warning w-100 mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#updateFormArea"
+        aria-expanded="false">
+        개인정보수정
+    </button>
+
+    <!--기본숨김→ 버튼클릭시펼쳐짐-->
+    <div class="collapse" id="updateFormArea">
+        <div class="card card-body bg-dark text-white border-secondary mt-2">
+
+            <!--수정결과메시지-->
+            <div id="updateMsg" class="alert d-none mb-3"></div>
+
+            <form id="updateForm" method="POST" action="/profile/update">
+                <div class="mb-3 text-start">
+                    <label class="form-label">이메일</label>
+                    <input type="text" class="form-control" id="updateEmail" name="email"
+                        placeholder="example@email.com">
+                    <div class="invalid-feedback" id="updateEmailMsg"></div>
+                </div>
+
+                <div class="mb-3 text-start">
+                    <label class="form-label">연락처</label>
+                    <input type="text" class="form-control" id="updatePhone" name="phone" placeholder="010-0000-0000">
+                    <div class="invalid-feedback" id="updatePhoneMsg"></div>
+                </div>
+
+                <button type="button" class="btn btn-warning w-100" onclick="validateAndUpdate()">
+                    수정완료
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- 개인정보수정폼아래에추가 -->
+    <hr class="my-4">
+    <h5 class="fw-bold mb-3">비밀번호 변경</h5>
+
+    <!-- 결과 메시지 -->
+    <div id="pwMsg" class="alert d-none mb-3"></div>
+
+    <form id="pwForm" method="POST" action="/profile/password">
+
+        <div class="mb-3 text-start">
+            <label class="form-label">현재 비밀번호</label>
+            <!-- 입력용 (서버 전송 안 됨) -->
+            <input type="password" class="form-control" id="currentPwInput" placeholder="현재 비밀번호 입력" required>
+            <div class="invalid-feedback" id="currentPwMsg"></div>
+
+            <!-- 해시값 전송용 hidden -->
+            <input type="hidden" id="currentPassword" name="currentPassword">
         </div>
 
+        <div class="mb-3 text-start">
+            <label class="form-label">새 비밀번호</label>
+            <input type="password" class="form-control" id="newPwInput" placeholder="8자 이상, 영문+숫자+특수문자" required>
+            <div class="invalid-feedback" id="newPwMsg"></div>
+
+            <input type="hidden" id="newPassword" name="newPassword">
+        </div>
+    </form>
+    <div class="mb-3 text-start">
+        <label class="form-label">새비밀번호확인</label>
+        <input type="password" class="form-control" id="newPwConfirm" placeholder="새비밀번호재입력" required>
+        <div class="invalid-feedback" id="newPwConfirmMsg"></div>
+    </div>
+    <button type="button" class="btn btn-danger w-100" onclick="validateAndChangePassword()">
+        비밀번호변경
+    </button>
+    </form>
 
 
-        <script src="../js/search.js"></script>
-        <script src="../js/input_sha256.js"></script>
 
-        <script src="../js/Profile.js"></script>
 
+
+    <script src="../js/search.js"></script>
+    <script src="../js/input_sha256.js"></script>
+
+    <script src="../js/Profile.js"></script>
+    <script src="../js/test.js"></script>
 </body>
 
 </html>
