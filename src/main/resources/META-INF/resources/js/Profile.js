@@ -88,7 +88,7 @@ function validateAndUpdate() {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
         showFieldError('updateEmail', 'updateEmailMsg',
-            '올바른이메일형식이아닙니다.');
+            '올바른 이메일 형식이 아닙니다.');
         valid = false;
     } else {
         clearFieldError('updateEmail');
@@ -96,7 +96,7 @@ function validateAndUpdate() {
     const phoneRegex = /^010-\d{4}-\d{4}$/;
     if (!phoneRegex.test(phone)) {
         showFieldError('updatePhone', 'updatePhoneMsg',
-            '010-0000-0000 형식으로입력해주세요.');
+            '010-0000-0000 형식으로 입력해주세요.');
         valid = false;
     } else {
         clearFieldError('updatePhone');
@@ -128,7 +128,7 @@ async function validateAndChangePassword() {
     // ①현재비밀번호빈값체크
     if (!currentPw) {
         showFieldError('currentPwInput', 'currentPwMsg',
-            '현재비밀번호를입력해주세요.');
+            '현재 비밀번호를 입력해주세요.');
         valid = false;
     } else {
         clearFieldError('currentPwInput');
@@ -137,7 +137,7 @@ async function validateAndChangePassword() {
     const pwRegex = /^(?=.*[a-zA-Z])(?=.*\d)(?=.*[!@#$%^&*]).{8,}$/;
     if (!pwRegex.test(newPw)) {
         showFieldError('newPwInput', 'newPwMsg',
-            '8자이상, 영문 + 숫자 + 특수문자를 포함해야 합니다.');
+            '8자이상, 영문+숫자+특수문자를 포함해야 합니다.');
         valid = false;
     }
     else {

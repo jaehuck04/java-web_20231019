@@ -67,6 +67,7 @@ public class AuthResource {
                 return Response
                                 .seeOther(URI.create("/after_login"))
                                 .build();
+
         }
 
         @GET

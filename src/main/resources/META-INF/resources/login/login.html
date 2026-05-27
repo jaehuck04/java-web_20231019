@@ -71,9 +71,8 @@
         </div>
     </nav>
 
-    <!-- 기존index.html 디자인을재활용한다.-->
-    <section class="hero d-flex align-items-center
-justify-content-center text-center py-5">
+    <!-- 기존index.html 디자인을재활용한다. -->
+    <section class="hero d-flex align-items-center justify-content-center text-center py-5">
         <div class="container" style="max-width: 400px;">
             <h2 class="fw-bold mb-4">로그인</h2>
             <form method="POST" action="/login_check" id="loginForm">
@@ -91,7 +90,7 @@ justify-content-center text-center py-5">
                     <input type="hidden" id="password" name="password">
                 </div>
                 <button type="button" onclick="validateAndLogin()" class="btn btn-primary w-100">로그인</button>
-                <!-- 신규 추가-->
+                <!-- 신규 추가 -->
                 <hr>
                 <a href="/register" class="btn btn-outline-secondary w-100">
                     회원가입
@@ -139,10 +138,8 @@ justify-content-center text-center py-5">
     </div>
 
 
-    <script src="../js/search.js"></script>
-    <script src="../js/input_sha256.js"></script>
-    <script src="../js/login.js"></script>
-
+    <script src="/js/input_sha256.js"></script>
+    <script src="/js/login.js"></script>
 </body>
 
 </html>
