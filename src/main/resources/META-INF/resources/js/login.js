@@ -12,13 +12,21 @@ async function submitLogin() {
     document.getElementById('loginForm').submit();
 }
 
-// 로그인 에러 처리
 window.addEventListener('load', function () {
     const params = new URLSearchParams(window.location.search);
     const error = params.get('error');
 
     if (error === '1') {
-        const pwInput = document.getElementById('passwordInput');
-        pwInput.classList.add('is-invalid');
+        showError('passwordMsg', '아이디 또는 패스워드가 올바르지 않습니다.');
     }
 });
+
+function showError(elementId, message) {
+    const el = document.getElementById(elementId);
+    const input = el.previousElementSibling; // 바로 위 input 요소
+
+    el.textContent = message;
+    input.classList.add('is-invalid'); // Bootstrap 에러 표시
+}
+
+

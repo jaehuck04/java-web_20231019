@@ -58,7 +58,7 @@ public class AuthResource {
 
                 if (user == null || !user.password.equals(password)) { // 존재 확인
                         return Response
-                                        .seeOther(URI.create("/login?error=1"))
+                                        .seeOther(URI.create("/login/?error=1"))
                                         .build();
                 }
 
