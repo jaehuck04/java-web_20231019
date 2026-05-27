@@ -14,8 +14,6 @@ import org.jboss.resteasy.reactive.RestForm;
 import org.jboss.resteasy.reactive.multipart.FileUpload;
 
 import java.io.InputStream;
-
-import jakarta.inject.Inject;
 import io.vertx.ext.web.RoutingContext;
 
 @Path("/") // 기본경로가최상위/
@@ -175,20 +173,23 @@ public class AuthResource {
         @Path("/profile")
         @Produces(MediaType.TEXT_HTML)
         public Response profilePage() {
-                // ①세션체크(로그인안한사용자차단)
+                // ①세션체크(로그인 안 한 사용자 차단)
                 String loginUser = context.session().get("loginUser");
                 if (loginUser == null) {
                         return Response
                                         .seeOther(URI.create("/login"))
                                         .build();
                 }
-                // ②DB에서사용자정보조회
+
+                // ②DB에서 사용자 정보 조회
                 User user = User.findByUsername(loginUser);
-                // ③세션에사용자정보저장(HTML에서활용)
+
+                // ③세션에 사용자 정보 저장(HTML에서활용)
                 context.session().put("userEmail", user.email);
                 context.session().put("userPhone", user.phone);
                 context.session().put("profileImage",
                                 user.profileImage != null ? user.profileImage : "default.png");
+
                 // ④프로필페이지반환
                 InputStream html = getClass()
                                 .getClassLoader()
@@ -227,7 +228,7 @@ public class AuthResource {
         @Consumes(MediaType.MULTIPART_FORM_DATA)
         public Response profileUpload(
                         @RestForm("profileImage") FileUpload file) {
-                // ①세션체크
+                // ① 세션 체크
                 String loginUser = context.session().get("loginUser");
                 if (loginUser == null) {
                         return Response
@@ -235,7 +236,7 @@ public class AuthResource {
                                         .build();
                 }
                 try {
-                        // ②확장자검사
+                        // ② 확장자 검사
                         String original = file.fileName();
                         String ext = original.substring(
                                         original.lastIndexOf('.') + 1).toLowerCase();
@@ -244,13 +245,13 @@ public class AuthResource {
                                                 .seeOther(URI.create("/profile?error=invalid_type"))
                                                 .build();
                         }
-                        // ③파일크기검사(5MB)
+                        // ③ 파일 크기 검사(5MB)
                         if (file.size() > 5 * 1024 * 1024) {
                                 return Response
                                                 .seeOther(URI.create("/profile?error=too_large"))
                                                 .build();
                         }
-                        // ④UUID 파일명생성+ 저장
+                        // ④ UUID 파일명 생성 + 저장
                         String newFileName = UUID.randomUUID() + "." + ext;
                         java.nio.file.Path uploadDir = Paths.get(
                                         "src/main/resources/META-INF/resources/uploads/profile");
@@ -258,7 +259,7 @@ public class AuthResource {
                         java.nio.file.Files.copy(file.uploadedFile(),
                                         uploadDir.resolve(newFileName),
                                         java.nio.file.StandardCopyOption.REPLACE_EXISTING);
-                        // ⑤DB 업데이트
+                        // ⑤ DB 업데이트
                         User user = User.findByUsername(loginUser);
                         user.profileImage = newFileName;
                         return Response
