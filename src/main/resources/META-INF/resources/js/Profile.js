@@ -1,31 +1,32 @@
 window.onload = function () {
-    const profileLink = document.getElementById('profileNavLink');
-    if (profileLink) {
-        new bootstrap.Tooltip(profileLink);
-    }
-
-
     fetch('/profile/info') // 서버에서사용자정보요청, 비동기i/o
         .then(res => res.json()) // json파싱
         .then(data => {
+            const profileLink = document.getElementById('profileNavLink');
+
+            if (profileLink) {
+                profileLink.setAttribute('data-bs-title', ' ' + data.username);
+                new bootstrap.Tooltip(profileLink);
+            }
+
             // 기존정보테이블표시(유지)
             document.getElementById('infoUsername').textContent = data.username; // DOM 조작방지
             document.getElementById('infoEmail').textContent = data.email;
             document.getElementById('infoPhone').textContent = data.phone;
+
             if (data.profileImage) { // null 체크
-                document.getElementById('profileImg').src =
-                    '/uploads/profile/' + data.profileImage;
+                document.getElementById('profileImg').src = '/uploads/profile/' + data.profileImage;
             }
 
             // 수정폼에기존값자동채우기
             document.getElementById('updateEmail').value = data.email;
             document.getElementById('updatePhone').value = data.phone;
 
-
-            if (profileLink) {
-                profileLink.setAttribute('data-bs-title', ' ' + data.username);
-                new bootstrap.Tooltip(profileLink);
-            }
+            // Tooltip 으로사용자명표시(navUsernamespan 방식→ 교체)
+            // if (profileLink) {
+            //     profileLink.setAttribute('data-bs-title', ' ' + data.username);
+            //     new bootstrap.Tooltip(profileLink);
+            // }
         });
 
     // URL 파라미터오류감지
@@ -48,6 +49,7 @@ window.onload = function () {
             pwMsgEl.textContent = '현재 비밀번호가 일치하지 않습니다.';
         }
     }
+
     if (error) {
         const messages = {
             'invalid_type': 'jpg, png, gif, webp파일만 가능합니다.',
@@ -62,6 +64,18 @@ window.onload = function () {
         }
     }
 
+    // 비밀번호변경성공처리, window.onload안에삽입
+    if (success === 'password_changed') {
+        // Toast 출력
+        showToast(
+            '비밀번호가 변경 완료, 로그인 페이지로 이동합니다.',
+            'success'
+        );
+        // 3.5초후로그인페이지로이동
+        setTimeout(function () {
+            window.location.href = '/logout?next=login';
+        }, 3500);
+    }
 }
 
 
@@ -97,6 +111,7 @@ function showFieldError(fieldId, msgId, message) {
     const msg = document.getElementById(msgId);
     if (msg) msg.textContent = message;
 }
+
 function clearFieldError(fieldId) {
     const field = document.getElementById(fieldId);
     field.classList.remove('is-invalid');
@@ -105,9 +120,50 @@ function clearFieldError(fieldId) {
 
 
 
+async function validateAndChangePassword() {
+    let valid = true;
+    const currentPw = document.getElementById('currentPwInput').value;
+    const newPw = document.getElementById('newPwInput').value;
+    const newPwConfirm = document.getElementById('newPwConfirm').value;
+    // ①현재비밀번호빈값체크
+    if (!currentPw) {
+        showFieldError('currentPwInput', 'currentPwMsg',
+            '현재비밀번호를입력해주세요.');
+        valid = false;
+    } else {
+        clearFieldError('currentPwInput');
+    }
+    // ②새비밀번호정규식검사
+    const pwRegex = /^(?=.*[a-zA-Z])(?=.*\d)(?=.*[!@#$%^&*]).{8,}$/;
+    if (!pwRegex.test(newPw)) {
+        showFieldError('newPwInput', 'newPwMsg',
+            '8자이상, 영문 + 숫자 + 특수문자를 포함해야 합니다.');
+        valid = false;
+    }
+    else {
+        clearFieldError('newPwInput');
+    }
+    // ③새비밀번호확인일치
+    if (newPw !== newPwConfirm) {
+        showFieldError('newPwConfirm', 'newPwConfirmMsg',
+            '새 비밀번호가 일치하지 않습니다.');
+        valid = false;
+    } else {
+        clearFieldError('newPwConfirm');
+    }
 
-
-
+    if (!valid) return;
+    // ④ 현재/새 비밀번호 SHA-256 해시 생성
+    const hashedCurrent = await hashPassword(currentPw);
+    const hashedNew = await hashPassword(newPw);
+    document.getElementById('currentPassword').value = hashedCurrent;
+    document.getElementById('newPassword').value
+        = hashedNew;
+    // F12 콘솔 확인
+    console.log('현재 PW 해시 :', hashedCurrent);
+    console.log('새 PW 해시 :', hashedNew);
+    document.getElementById('pwForm').submit();
+}
 
 
 
