@@ -157,7 +157,8 @@ public class AuthResource {
                 newUser.persist();
                 // ④가입완료페이지로이동
                 return Response
-                                .seeOther(URI.create("/register_success"))
+                                // .seeOther(URI.create("/register_success"))
+                                .seeOther(URI.create("/login/register_success.html"))
                                 .build();
         }
 
