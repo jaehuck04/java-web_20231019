@@ -241,3 +241,67 @@ body.light-mode .card-text {
 }
 
 /* =================================================================== */
+
+
+
+/* ============================
+   네비바 기본 색상 통일
+   ============================ */
+
+/* 기본 회색 */
+.navbar .nav-link,
+.navbar .nav-link.active {
+    color: #bfbfbf !important;
+}
+
+/* hover 시 흰색 */
+.navbar .nav-link:hover,
+.navbar .nav-link.active:hover {
+    color: #ffffff !important;
+}
+
+/* 드롭다운 메뉴 */
+.navbar .dropdown-menu .dropdown-item {
+    color: #bfbfbf;
+}
+
+.navbar .dropdown-menu .dropdown-item:hover {
+    color: #ffffff;
+    background-color: transparent;
+}
+
+/* ================================
+   외부 웹사이트 드롭다운 스타일 개선
+   ================================ */
+
+/* 드롭다운 전체 박스 */
+.navbar .dropdown-menu {
+    background-color: #0f0f0f;
+    border: 1px solid #3a3a3a;
+    border-radius: 6px;
+    padding: 8px 0;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    min-width: 180px;
+}
+
+/* 드롭다운 아이템 */
+.navbar .dropdown-menu .dropdown-item {
+    color: #c8c8c8;
+    padding: 10px 16px;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+}
+
+/* hover 시 LoL 느낌 강조 */
+.navbar .dropdown-menu .dropdown-item:hover {
+    background-color: rgba(160, 32, 240, 0.15);
+    /* 보라빛 하이라이트 */
+    color: #ffffff;
+    padding-left: 20px;
+    /* 살짝 밀리는 애니메이션 */
+}
+
+/* 구분선 */
+.navbar .dropdown-divider {
+    border-color: #444;
+}

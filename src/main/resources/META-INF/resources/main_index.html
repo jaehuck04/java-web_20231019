@@ -28,11 +28,9 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <!-- <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="images/lol-logo.webp" alt="LOL Logo" style="height:32px; width:auto;">Navbar
-            </a> -->
+
             <img src="images/lol-logo.webp" alt="" width="30" height="24">Navbar
-            <!-- [변경] "Navbar" 텍스트 → 다크/라이트 토글 버튼-->
+
             <button class="btn border-0" id="themeToggleBtn" onclick="toggleTheme()">
                 DARK
             </button>
@@ -42,46 +40,60 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">뉴스</a>
+                        <a class="nav-link active" href="#">뉴스</a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">챔피언</a>
+                        <a class="nav-link active" href="#">챔피언</a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="main_page_sub/download.html">다운로드</a>
+                        <a class="nav-link active" href="main_page_sub/download.html">다운로드</a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="/login">로그인</a>
                     </li>
+
+                    <!-- 드롭다운 정상 구조 -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             외부 웹사이트
                         </a>
+
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="https://www.leagueoflegends.com/ko-kr/">롤 공식 홈</a></li>
                             <li><a class="dropdown-item" href="https://op.gg/ko">롤 전적</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">유튜브</a></li>
+                            <li><a class="dropdown-item" href="https://www.youtube.com/@LeagueofLegendsKR">유튜브</a></li>
                         </ul>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                     </li>
+
                 </ul>
+
+                <!-- 검색창 -->
                 <form class="d-flex" id="searchForm">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
-                        id="searchInput">
+                    <input class="form-control me-2" type="search" placeholder="Search" id="searchInput">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
+
             </div>
         </div>
     </nav>
+
 
     <!-- 히어로 배너 (Hero Banner) -->
     <section class="hero d-flex align-items-center justify-content-center text-center py-5">
