@@ -15,9 +15,9 @@
 
     <script src="../js/toast.js"></script>
     <script>
-        window.onload = function () {
-            showToast('로그인 성공!', 'success');
-        };
+        window.addEventListener('load', function () {
+            showToast('로그인 페이지 로딩 완료!', 'success');
+        });
     </script>
 
 
@@ -143,6 +143,18 @@
                     <button type="button" class="btnbtn-secondary" data-bs-dismiss="modal">취소</button>
                     <button type="button" class="btnbtn-primary" onclick="submitRegister()">가입하기</button>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 토스트 컨테이너 </body> 바로 위에 추가-->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index:9999">
+        <div id="liveToast" class="toast align-items-center text-white bg-success border-0" role="alert">
+            <div class="d-flex">
+                <div class="toast-body" id="toastBody">
+                    메시지
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
             </div>
         </div>
     </div>
