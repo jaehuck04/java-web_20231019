@@ -2,7 +2,7 @@ window.onload = function () {
 
     //프로필 정보 로딩
     fetch('/profile/info') // 서버에서 사용자 정보 요청, 비동기i/o
-        .then(res => res.json()) // json파싱
+        .then(res => res.json()) // json 파싱
         .then(data => {
             const profileLink = document.getElementById('profileNavLink');
 
