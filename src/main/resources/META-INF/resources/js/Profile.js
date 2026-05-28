@@ -1,5 +1,7 @@
 window.onload = function () {
-    fetch('/profile/info') // 서버에서사용자정보요청, 비동기i/o
+
+    //프로필 정보 로딩
+    fetch('/profile/info') // 서버에서 사용자 정보 요청, 비동기i/o
         .then(res => res.json()) // json파싱
         .then(data => {
             const profileLink = document.getElementById('profileNavLink');
@@ -21,19 +23,33 @@ window.onload = function () {
             // 수정폼에기존값자동채우기
             document.getElementById('updateEmail').value = data.email;
             document.getElementById('updatePhone').value = data.phone;
-
-            // Tooltip 으로사용자명표시(navUsernamespan 방식→ 교체)
-            // if (profileLink) {
-            //     profileLink.setAttribute('data-bs-title', ' ' + data.username);
-            //     new bootstrap.Tooltip(profileLink);
-            // }
         });
 
-    // URL 파라미터오류감지
+
+
+    // URL 파라미터 오류 감지
     const params = new URLSearchParams(window.location.search);
     const error = params.get('error');
     const success = params.get('success');
+
+    // 업로드 에러 처리
+    if (error) {
+        const uploadErrors = {
+            'invalid_type': 'jpg, png, gif, webp 파일만 가능합니다.',
+            'too_large': '파일 크기는 5MB 이하이어야 합니다.',
+            'upload_fail': '업로드 실패. 다시 시도해주세요.'
+        };
+
+        if (uploadErrors[error]) {
+            const div = document.getElementById('uploadErrorMsg');
+            div.textContent = uploadErrors[error];
+            div.classList.remove('d-none');
+        }
+    }
+
+    // 개인 정보 수정 성공/실패 처리
     const msgEl = document.getElementById('updateMsg');
+
     if (success === 'updated') {
         msgEl.className = 'alert alert-success';
         msgEl.textContent = '개인 정보가 수정되었습니다.';
@@ -50,6 +66,8 @@ window.onload = function () {
         }
     }
 
+
+    // 비밀번호 변경 실패
     if (error) {
         const messages = {
             'invalid_type': 'jpg, png, gif, webp파일만 가능합니다.',
@@ -64,7 +82,7 @@ window.onload = function () {
         }
     }
 
-    // 비밀번호변경성공처리, window.onload안에삽입
+    // 비밀번호 변경 성공 처리, window.onload안에삽입
     if (success === 'password_changed') {
         // Toast 출력
         showToast(
