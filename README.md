@@ -118,8 +118,7 @@ LocalStorage 저장 → 새로고침해도 유지<br><br>
 캐릭터 카드는 로그인 여부와 상관없이 모달로 정보 표시<br><br>
 
 ============================================================================<br><br>
-
-@기술 스택<br><
+@기술 스택<br>
 Backend: Quarkus (Java, RESTEasy Reactive, Hibernate ORM, JDBC MySQL Driver)<br>
 Frontend: HTML5, CSS3, JavaScript(ES6), Bootstrap 5(Modal, Card, Navbar 등)<br>
 Database: MySQL 8.x + MySQL Connector/J<br>
@@ -127,7 +126,7 @@ Database: MySQL 8.x + MySQL Connector/J<br>
 
 
 @기술 스택 상세 설명<br>
-*Backend: Quarkus (Java)<br>
+*Backend: Quarkus (Java)*<br>
 사용 확장(Extensions):<br>
 quarkus-resteasy-reactive, quarkus-hibernate-orm, quarkus-jdbc-mysql, quarkus-arc(CDI)<br>
 REST API 개발: JAX-RS 기반 (@Path, @GET, @POST)<br>
@@ -136,7 +135,7 @@ ORM: Hibernate ORM으로 엔티티 매핑 및 CRUD 처리<br>
 Dev Mode 지원: 코드 변경 시 서버 자동 리로드<br><br>
 
 
-*Frontend: HTML5, CSS3, JavaScript + Bootstrap 5<br>
+*Frontend: HTML5, CSS3, JavaScript + Bootstrap 5*<br>
 HTML5로 페이지 구조 작성<br>
 CSS3로 기본 스타일링 및 반응형 레이아웃 구성<br>
 JavaScript(ES6)로 다크/라이트 모드 구현 (LocalStorage 저장)<br>
@@ -148,24 +147,26 @@ Grid System → 반응형 레이아웃<br>
 JS로 Bootstrap Modal에 동적 데이터 삽입<br><br>
 
 
-*Database: MySQL<br>
+*Database: MySQL*<br>
 버전: MySQL 8.x<br>
 드라이버: MySQL Connector/J (mysql-connector-java)<br>
 사용자 정보 저장 테이블 구성 (id, password, email, nickname 등)<br>
 Hibernate ORM 또는 JDBC로 CRUD 처리<br><br>
 
-*기타 기술 요소<br>
-SHA-256 Password Hashing 
-비밀번호를 SHA-256 알고리즘으로 해시 후 DB 저장<br><br>
 
-HttpSession 기반 로그인 관리
+*기타 기술 요소*<br>
+SHA-256 Password Hashing<br>
+비밀번호를 SHA-256 알고리즘으로 해시 후 DB에 저장<br><br>
+
+HttpSession 기반 로그인 관리<br>
 로그인 성공 시 세션 생성 → 페이지 이동 시 로그인 상태 유지<br><br>
 
-Bootstrap Modal + JS 이벤트 처리
+Bootstrap Modal + JS 이벤트 처리<br>
 카드 클릭 → JS로 데이터 읽기 → Modal에 삽입 → Modal 표시<br><br>
 
-다크/라이트 모드
+다크/라이트 모드<br>
 JS로 테마 전환, LocalStorage로 사용자 설정 저장<br><br>
+
 
 ============================================================================<br><br>
 
@@ -203,7 +204,7 @@ Bootstrap 모달이 화면에 표시된다.<br><br>
 
 @ERD (데이터베이스 테이블 구조)<br>
 아래는 MySQL에서 사용되는 users 테이블 ERD 구조이다.<br>
-회원가입, 로그인, 프로필, 정보 수정 기능을 모두 지원하기 위한 최소 구성이다.<br>
+회원가입, 로그인, 프로필, 정보 수정 기능을 모두 지원하기 위한 최소 구성이다.<br><br>
 
 📌 users 테이블<br>
 users<br>
@@ -212,7 +213,7 @@ users<br>
 ├── password (VARCHAR)                  # SHA-256 해시 비밀번호<br>
 ├── email (VARCHAR)                     # 이메일<br>
 ├── nickname (VARCHAR)                  # 닉네임<br>
-└── profile_img (VARCHAR)               # 프로필 이미지 경로<br>
+└── profile_img (VARCHAR)               # 프로필 이미지 경로<br><br>
 
 ✔ ERD 설명<br>
 id → 기본키(PK), 자동 증가<br>
@@ -222,7 +223,3 @@ email → 사용자 이메일<br>
 nickname → 닉네임<br>
 profile_img → 프로필 이미지 파일명 또는 URL<br>
 created_at → 가입 시간 기록<br><br>
-
-
-
-
