@@ -3,8 +3,10 @@
 
 ## 기말 과제 실습 내용
 <div align="center">
+    <img src="./screenshot/s0.png" width="300" alt="실습 화면0">
     <img src="./screenshot/s1.png" width="300" alt="실습 화면1">
-    <img src="./screenshot/s2.png" width="300" alt="실습 화면2">
+    <img src="./screenshot/s2-1.png" width="300" alt="실습 화면2-1">
+    <img src="./screenshot/s2-2.png" width="300" alt="실습 화면2-2">
     <img src="./screenshot/s3.png" width="300" alt="실습 화면3">
     <img src="./screenshot/s4.png" width="300" alt="실습 화면4">
     <img src="./screenshot/s5.png" width="300" alt="실습 화면5">
