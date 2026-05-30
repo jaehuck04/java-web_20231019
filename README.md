@@ -3,18 +3,18 @@
 
 ## 기말 과제 실습 내용
 <div align="center">
-    <img src="./screenshot/s0.png" width="300" alt="실습 화면0">
-    <img src="./screenshot/s1.png" width="300" alt="실습 화면1">
-    <img src="./screenshot/s2-1.png" width="300" alt="실습 화면2-1">
-    <img src="./screenshot/s2-2.png" width="300" alt="실습 화면2-2">
-    <img src="./screenshot/s3.png" width="300" alt="실습 화면3">
-    <img src="./screenshot/s4.png" width="300" alt="실습 화면4">
-    <img src="./screenshot/s5.png" width="300" alt="실습 화면5">
-    <img src="./screenshot/s6.png" width="300" alt="실습 화면6">
-    <img src="./screenshot/s7.png" width="300" alt="실습 화면7">
-    <img src="./screenshot/s8.png" width="300" alt="실습 화면8">
-    <img src="./screenshot/s9.png" width="300" alt="실습 화면9">
-    <img src="./screenshot/s10.png" width="300" alt="실습 화면10">
+    <img src="./screenshot/s0.png" width="45%" alt="실습 화면0">
+    <img src="./screenshot/s1.png" width="45%" alt="실습 화면1">
+    <img src="./screenshot/s2-1.png" width="45%" alt="실습 화면2-1">
+    <img src="./screenshot/s2-2.png" width="45%" alt="실습 화면2-2">
+    <img src="./screenshot/s3.png" width="45%" alt="실습 화면3">
+    <img src="./screenshot/s4.png" width="45%" alt="실습 화면4">
+    <img src="./screenshot/s5.png" width="45%" alt="실습 화면5">
+    <img src="./screenshot/s6.png" width="45%" alt="실습 화면6">
+    <img src="./screenshot/s7.png" width="45%" alt="실습 화면7">
+    <img src="./screenshot/s8.png"  width="45%" alt="실습 화면8">
+    <img src="./screenshot/s9.png"  width="45%" alt="실습 화면9">
+    <img src="./screenshot/s10.png"  width="45%" alt="실습 화면10">
 </div>
 <br>
 
@@ -40,7 +40,7 @@ MySQL 연동<br>
 회원 정보 수정<br>
 
 
-## 기말 과제(웹사이트)
+## 기말 과제 웹사이트 설명
 @프로젝트 구조<br>
 java-web_20231019<br>
 │<br>
