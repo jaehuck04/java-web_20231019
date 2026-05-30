@@ -155,16 +155,16 @@ JS로 Bootstrap Modal에 동적 데이터 삽입<br><br>
 Hibernate ORM 또는 JDBC로 CRUD 처리<br><br>
 
 *기타 기술 요소<br>
-SHA-256 Password Hashing<br>  
+SHA-256 Password Hashing 
 비밀번호를 SHA-256 알고리즘으로 해시 후 DB 저장<br><br>
 
-HttpSession 기반 로그인 관리<br>  
+HttpSession 기반 로그인 관리
 로그인 성공 시 세션 생성 → 페이지 이동 시 로그인 상태 유지<br><br>
 
-Bootstrap Modal + JS 이벤트 처리<br>  
+Bootstrap Modal + JS 이벤트 처리
 카드 클릭 → JS로 데이터 읽기 → Modal에 삽입 → Modal 표시<br><br>
 
-다크/라이트 모드<br>
+다크/라이트 모드
 JS로 테마 전환, LocalStorage로 사용자 설정 저장<br><br>
 
 ============================================================================<br><br>
