@@ -220,6 +220,4 @@ id → 기본키(PK), 자동 증가<br>
 username → UNIQUE, 로그인 ID로 사용<br>
 password → SHA-256 해시 문자열 저장<br>
 email → 사용자 이메일<br>
-nickname → 닉네임<br>
-profile_img → 프로필 이미지 파일명 또는 URL<br>
-created_at → 가입 시간 기록<br><br>
+profileImage → 프로필 이미지 파일명 또는 URL<br><br>
