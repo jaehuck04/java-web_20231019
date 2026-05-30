@@ -3,16 +3,16 @@
 
 ## 기말 과제 실습 내용
 <div align="center">
-    <img src="./screenshot/s1.png" width="45%" alt="실습 화면1">
-    <img src="./screenshot/s2.png" width="45%" alt="실습 화면2">
-    <img src="./screenshot/s3.png" width="45%" alt="실습 화면3">
-    <img src="./screenshot/s4.png" width="45%" alt="실습 화면4">
-    <img src="./screenshot/s5.png" width="45%" alt="실습 화면5">
-    <img src="./screenshot/s6.png" width="45%" alt="실습 화면6">
-    <img src="./screenshot/s1.png" width="45%" alt="실습 화면7">
-    <img src="./screenshot/s1.png" width="45%" alt="실습 화면8">
-    <img src="./screenshot/s1.png" width="45%" alt="실습 화면9">
-    <img src="./screenshot/s1.png" width="45%" alt="실습 화면10">
+    <img src="./screenshot/s1.png" width="300" alt="실습 화면1">
+    <img src="./screenshot/s2.png" width="300" alt="실습 화면2">
+    <img src="./screenshot/s3.png" width="300" alt="실습 화면3">
+    <img src="./screenshot/s4.png" width="300" alt="실습 화면4">
+    <img src="./screenshot/s5.png" width="300" alt="실습 화면5">
+    <img src="./screenshot/s6.png" width="300" alt="실습 화면6">
+    <img src="./screenshot/s1.png" width="300" alt="실습 화면7">
+    <img src="./screenshot/s1.png" width="300" alt="실습 화면8">
+    <img src="./screenshot/s1.png" width="300" alt="실습 화면9">
+    <img src="./screenshot/s1.png" width="300" alt="실습 화면10">
 </div>
 <br>
 
@@ -55,7 +55,7 @@ java-web_20231019<br>
 ├── pom.xml                           # Maven 프로젝트 설정<br>
 ├── mvnw / mvnw.cmd                   # Maven Wrapper 실행 파일<br>
 ├── .gitignore<br>
-└── README.md<br>
+└── README.md<br><br>
 
 
 
@@ -81,8 +81,7 @@ java-web_20231019<br>
 로그아웃 시 세션 삭제 후 메인 페이지로 이동<br>
 캐릭터 카드는 로그인 여부와 상관없이 모달로 정보 표시<br><br>
 
-=========================================================================================<br><br>
-
+============================================================================<br><br>
 
 
 @웹사이트 구조<br>
@@ -117,8 +116,7 @@ DB에서 사용자 정보 불러오기<br>
 JS로 테마 전환 기능 구현<br>
 LocalStorage 저장 → 새로고침해도 유지<br><br>
 
-
-=========================================================================================<br><br>
+============================================================================<br><br>
 
 @기술 스택<br><
 Backend: Quarkus (Java, RESTEasy Reactive, Hibernate ORM, JDBC MySQL Driver)<br>
@@ -165,8 +163,7 @@ Bootstrap Modal + JS 이벤트 처리<br>
 다크/라이트 모드<br>
 JS로 테마 전환, LocalStorage로 사용자 설정 저장<br><br>
 
-
-=========================================================================================<br><br>
+============================================================================<br><br>
 
 @캐릭터 카드 & Bootstrap 모달 기능 설명<br>
 웹사이트에서는 LOL 챔피언 캐릭터 카드(Champion Card)를 사용하여<br>
@@ -197,7 +194,7 @@ JS가 클릭된 카드의 data-name, data-img, data-desc 등을 읽는다.<br>
 Bootstrap 모달이 화면에 표시된다.<br><br>
 
 
-=========================================================================================<br><br>
+============================================================================<br><br>
 
 
 @ERD (데이터베이스 테이블 구조)<br>
