@@ -4,7 +4,7 @@
 ## 기말 과제 실습 내용
 <div align="center">
     <img src="./screenshot/s1.png" width="45%" alt="실습 화면1">
-    <img src="./screenshot/s2.png." width="45%" alt="실습 화면2">
+    <img src="./screenshot/s2.png" width="45%" alt="실습 화면2">
     <img src="./screenshot/s3.png" width="45%" alt="실습 화면3">
     <img src="./screenshot/s4.png" width="45%" alt="실습 화면4">
     <img src="./screenshot/s5.png" width="45%" alt="실습 화면5">
@@ -39,7 +39,7 @@ MySQL 연동<br>
 
 
 ## 기말 과제(웹사이트)
-@프로젝트 구조<br><br>
+@프로젝트 구조<br>
 java-web_20231019<br>
 │<br>
 ├── src/<br>
@@ -58,14 +58,76 @@ java-web_20231019<br>
 └── README.md<br>
 
 
-@기술 스택<br><br>
+
+@페이지 흐름도 (Website Flow)<br>
+[메인 페이지]<br>
+    │<br>
+    ├── (로그인 X) → [로그인 페이지] → 로그인 성공 → 세션 생성 → 메인 페이지로 이동<br>
+    │<br>
+    ├── (회원가입 버튼) → [회원가입 페이지] → 가입 완료 → 로그인 페이지로 이동<br>
+    │<br>
+    ├── (로그인 O) → [프로필 페이지]<br>
+    │        │<br>
+    │        ├── [회원 정보 수정 페이지] → 수정 완료 → 프로필 페이지<br>
+    │        │<br>
+    │        └── 로그아웃 → 세션 삭제 → 메인 페이지<br>
+    │<br>
+    └── (캐릭터 카드 클릭) → [Bootstrap Modal] → 캐릭터 상세 정보 표시<br><br>
+
+
+✔ 흐름도 설명<br>
+로그인하지 않은 사용자는 프로필 페이지 접근 불가<br>
+로그인 성공 시 HttpSession 생성 → 로그인 상태 유지<br>
+로그아웃 시 세션 삭제 후 메인 페이지로 이동<br>
+캐릭터 카드는 로그인 여부와 상관없이 모달로 정보 표시<br><br>
+
+=========================================================================================<br><br>
+
+
+
+@웹사이트 구조<br>
+1.메인 페이지<br>
+사이트 소개 및 기본 UI 제공<br>
+로그인 여부에 따라 다른 메뉴 표시<br>
+세션 체크 기능 포함<br>
+
+2.회원가입 기능<br>
+사용자 정보 입력<br>
+비밀번호 암호화 저장<br>
+중복 ID 체크<br>
+MySQL 연동하여 DB 저장<br>
+
+3.로그인 / 로그아웃 기능<br>
+입력한 ID/PW를 DB와 비교<br>
+암호화된 비밀번호 검증<br>
+로그인 성공 시 세션 생성<br>
+로그아웃 시 세션 삭제<br>
+
+4.프로필 페이지<br>
+로그인한 사용자 정보 표시<br>
+프로필 이미지, 닉네임, 이메일 등 조회<br>
+DB에서 사용자 정보 불러오기<br>
+
+5.회원 정보 수정<br>
+프로필 정보 변경<br>
+비밀번호 변경 시 암호화 적용<br>
+변경된 정보 DB 업데이트<br>
+
+6.다크/라이트 모드 (JavaScript)<br>
+JS로 테마 전환 기능 구현<br>
+LocalStorage 저장 → 새로고침해도 유지<br><br>
+
+
+=========================================================================================<br><br>
+
+@기술 스택<br><
 Backend: Quarkus (Java, RESTEasy Reactive, Hibernate ORM, JDBC MySQL Driver)<br>
 Frontend: HTML5, CSS3, JavaScript(ES6), Bootstrap 5(Modal, Card, Navbar 등)<br>
 Database: MySQL 8.x + MySQL Connector/J<br>
 기타: SHA-256 Password Hashing, HttpSession 기반 로그인 관리<br><br>
 
 
-@기술 스택 상세 설명<br><br>
+@기술 스택 상세 설명<br>
 *Backend: Quarkus (Java)<br>
 사용 확장(Extensions):<br>
 quarkus-resteasy-reactive, quarkus-hibernate-orm, quarkus-jdbc-mysql, quarkus-arc(CDI)<br>
@@ -73,7 +135,6 @@ REST API 개발: JAX-RS 기반 (@Path, @GET, @POST)<br>
 ORM: Hibernate ORM으로 엔티티 매핑 및 CRUD 처리<br>
 의존성 주입: CDI(Arc) 사용<br>
 Dev Mode 지원: 코드 변경 시 서버 자동 리로드<br><br>
-
 
 
 *Frontend: HTML5, CSS3, JavaScript + Bootstrap 5<br>
@@ -105,42 +166,10 @@ Bootstrap Modal + JS 이벤트 처리<br>
 JS로 테마 전환, LocalStorage로 사용자 설정 저장<br><br>
 
 
+=========================================================================================<br><br>
 
-@웹사이트 구조<br><br>
-1.메인 페이지<br>
-사이트 소개 및 기본 UI 제공<br>
-로그인 여부에 따라 다른 메뉴 표시<br>
-세션 체크 기능 포함<br><br>
-
-2.회원가입 기능<br>
-사용자 정보 입력<br>
-비밀번호 암호화 저장<br>
-중복 ID 체크<br>
-MySQL 연동하여 DB 저장<br><br>
-
-3.로그인 / 로그아웃 기능<br>
-입력한 ID/PW를 DB와 비교<br>
-암호화된 비밀번호 검증<br>
-로그인 성공 시 세션 생성<br>
-로그아웃 시 세션 삭제<br><br>
-
-4.프로필 페이지<br>
-로그인한 사용자 정보 표시<br>
-프로필 이미지, 닉네임, 이메일 등 조회<br>
-DB에서 사용자 정보 불러오기<br><br>
-
-5.회원 정보 수정<br>
-프로필 정보 변경<br>
-비밀번호 변경 시 암호화 적용<br>
-변경된 정보 DB 업데이트<br><br>
-
-6.다크/라이트 모드 (JavaScript)<br>
-JS로 테마 전환 기능 구현<br>
-LocalStorage 저장 → 새로고침해도 유지<br><br>
-
-
-@캐릭터 카드 & Bootstrap 모달 기능 설명<br><br>
-웹사이트에서는 LOL 챔피언 캐릭터 카드(Champion Card)를 사용하여
+@캐릭터 카드 & Bootstrap 모달 기능 설명<br>
+웹사이트에서는 LOL 챔피언 캐릭터 카드(Champion Card)를 사용하여<br>
 사용자가 캐릭터 정보를 직관적으로 확인할 수 있도록 구성되어 있다.<br>
 각 캐릭터 카드는 Bootstrap Card 컴포넌트를 기반으로 제작되었으며,
 카드를 클릭하면 Bootstrap Modal이 실행되어 캐릭터 상세 정보를 보여준다.<br><br>
@@ -168,9 +197,12 @@ JS가 클릭된 카드의 data-name, data-img, data-desc 등을 읽는다.<br>
 Bootstrap 모달이 화면에 표시된다.<br><br>
 
 
-@ERD (데이터베이스 테이블 구조)<br><br>
+=========================================================================================<br><br>
+
+
+@ERD (데이터베이스 테이블 구조)<br>
 아래는 MySQL에서 사용되는 users 테이블 ERD 구조이다.<br>
-회원가입, 로그인, 프로필, 정보 수정 기능을 모두 지원하기 위한 최소 구성이다.<br><br>
+회원가입, 로그인, 프로필, 정보 수정 기능을 모두 지원하기 위한 최소 구성이다.<br>
 
 📌 users 테이블<br>
 users<br>
@@ -179,8 +211,7 @@ users<br>
 ├── password (VARCHAR)                  # SHA-256 해시 비밀번호<br>
 ├── email (VARCHAR)                     # 이메일<br>
 ├── nickname (VARCHAR)                  # 닉네임<br>
-├── profile_img (VARCHAR)               # 프로필 이미지 경로<br>
-└── created_at (DATETIME)               # 가입 날짜<br><br>
+└── profile_img (VARCHAR)               # 프로필 이미지 경로<br>
 
 ✔ ERD 설명<br>
 id → 기본키(PK), 자동 증가<br>
@@ -192,25 +223,5 @@ profile_img → 프로필 이미지 파일명 또는 URL<br>
 created_at → 가입 시간 기록<br><br>
 
 
-@페이지 흐름도 (Website Flow)<br><br>
-[메인 페이지]<br>
-    │<br>
-    ├── (로그인 X) → [로그인 페이지] → 로그인 성공 → 세션 생성 → 메인 페이지로 이동<br>
-    │<br>
-    ├── (회원가입 버튼) → [회원가입 페이지] → 가입 완료 → 로그인 페이지로 이동<br>
-    │<br>
-    ├── (로그인 O) → [프로필 페이지]<br>
-    │        │<br>
-    │        ├── [회원 정보 수정 페이지] → 수정 완료 → 프로필 페이지<br>
-    │        │<br>
-    │        └── 로그아웃 → 세션 삭제 → 메인 페이지<br>
-    │<br>
-    └── (캐릭터 카드 클릭) → [Bootstrap Modal] → 캐릭터 상세 정보 표시<br><br>
 
-
-✔ 흐름도 설명<br>
-로그인하지 않은 사용자는 프로필 페이지 접근 불가<br>
-로그인 성공 시 HttpSession 생성 → 로그인 상태 유지<br>
-로그아웃 시 세션 삭제 후 메인 페이지로 이동<br>
-캐릭터 카드는 로그인 여부와 상관없이 모달로 정보 표시<br><br>
 
