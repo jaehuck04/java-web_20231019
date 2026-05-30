@@ -11,10 +11,10 @@
     <img src="./screenshot/s4.png" width="300" alt="실습 화면4">
     <img src="./screenshot/s5.png" width="300" alt="실습 화면5">
     <img src="./screenshot/s6.png" width="300" alt="실습 화면6">
-    <img src="./screenshot/s1.png" width="300" alt="실습 화면7">
-    <img src="./screenshot/s1.png" width="300" alt="실습 화면8">
-    <img src="./screenshot/s1.png" width="300" alt="실습 화면9">
-    <img src="./screenshot/s1.png" width="300" alt="실습 화면10">
+    <img src="./screenshot/s7.png" width="300" alt="실습 화면7">
+    <img src="./screenshot/s8.png" width="300" alt="실습 화면8">
+    <img src="./screenshot/s9.png" width="300" alt="실습 화면9">
+    <img src="./screenshot/s10.png" width="300" alt="실습 화면10">
 </div>
 <br>
 
