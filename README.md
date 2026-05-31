@@ -7,6 +7,8 @@
     <img src="./screenshot/s1.png" width="45%" alt="실습 화면1">
     <img src="./screenshot/s2-1.png" width="45%" alt="실습 화면2-1">
     <img src="./screenshot/s2-2.png" width="45%" alt="실습 화면2-2">
+    <img src="./screenshot/s2-3.png" width="45%" alt="실습 화면2-3">
+    <img src="./screenshot/s2-4.png" width="45%" alt="실습 화면2-4">
     <img src="./screenshot/s3.png" width="45%" alt="실습 화면3">
     <img src="./screenshot/s4.png" width="45%" alt="실습 화면4">
     <img src="./screenshot/s5.png" width="45%" alt="실습 화면5">
