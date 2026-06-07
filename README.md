@@ -18,7 +18,7 @@
     <img src="./screenshot/s9.png"  width="45%" alt="프로필 페이지 - 개인 정보 수정, 비밀번호 변경">
     <img src="./screenshot/s10.png"  width="45%" alt="네비바 추가 디자인">
     <img src="./screenshot/s11.png"  width="45%" alt="다운로드 페이지">
-    <img src="./screenshot/s11.png"  width="45%" alt="다운로드 페이지-다크/라이드 적용">
+    <img src="./screenshot/s12.png"  width="45%" alt="다운로드 페이지-다크/라이드 적용">
 </div>
 <br>
 
