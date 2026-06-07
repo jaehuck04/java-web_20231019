@@ -1,3 +1,4 @@
+// 선택한 챔피언 정보를 이용해 모달을 띄우는 함수
 function openChampionModal(key) {
     const champ = champions[key];
 
@@ -18,3 +19,13 @@ function openChampionModal(key) {
     const modal = new bootstrap.Modal(document.getElementById("championModal"));
     modal.show();
 }
+
+// 모든 챔피언 카드 버튼에 addEventListener로 클릭 이벤트를 등록하는 함수
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll('.btn-outline-light').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const key = btn.dataset.champ;
+            openChampionModal(key);
+        });
+    });
+});

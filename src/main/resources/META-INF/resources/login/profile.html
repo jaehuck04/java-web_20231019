@@ -118,7 +118,7 @@
             <!-- 사진 업로드폼 -->
             <form id="uploadForm" method="POST" action="/profile/upload" enctype="multipart/form-data">
                 <div class="mb-3">
-                    <label class="form-label">프로필사진변경</label>
+                    <label class="form-label">프로필 사진변경</label>
                     <input type="file" class="form-control" id="profileFile" name="profileImage"
                         accept="image/jpeg,image/png,image/gif,image/webp">
                     <div class="form-text text-muted">
@@ -138,7 +138,7 @@
     <!--토글버튼-->
     <button class="btn btn-warning w-100 mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#updateFormArea"
         aria-expanded="false">
-        개인정보수정
+        개인정보 수정
     </button>
 
     <!--기본숨김→ 버튼클릭시펼쳐짐-->
@@ -163,13 +163,13 @@
                 </div>
 
                 <button type="button" class="btn btn-warning w-100" onclick="validateAndUpdate()">
-                    수정완료
+                    수정 완료
                 </button>
             </form>
         </div>
     </div>
 
-    <!-- 개인정보수정폼아래에추가 -->
+    <!-- 개인정보 수정폼 아래에 추가 -->
     <hr class="my-4">
     <h5 class="fw-bold mb-3">비밀번호 변경</h5>
 
@@ -197,12 +197,12 @@
         </div>
     </form>
     <div class="mb-3 text-start">
-        <label class="form-label">새비밀번호확인</label>
-        <input type="password" class="form-control" id="newPwConfirm" placeholder="새비밀번호재입력" required>
+        <label class="form-label">새 비밀번호 확인</label>
+        <input type="password" class="form-control" id="newPwConfirm" placeholder="새 비밀번호 재입력" required>
         <div class="invalid-feedback" id="newPwConfirmMsg"></div>
     </div>
     <button type="button" class="btn btn-danger w-100" onclick="validateAndChangePassword()">
-        비밀번호변경
+        비밀번호 변경
     </button>
     </form>
 
