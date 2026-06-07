@@ -16,9 +16,3 @@ function toggleTheme() {
         navbar.classList.add('navbar-dark', 'bg-dark');
     }
 }
-
-// [추가] 인라인 onclick 제거 → 이벤트 리스너 방식
-document.addEventListener("DOMContentLoaded", () => {
-    const btn = document.getElementById('themeToggleBtn');
-    btn.addEventListener('click', toggleTheme);
-});

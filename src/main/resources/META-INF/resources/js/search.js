@@ -11,8 +11,6 @@ const CHAMPIONS = [
     { name: '가렌', engName: 'Garen', role: '전사', lane: '탑', img: 'https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Garen.png', difficulty: '하' },
     { name: '니달리', engName: 'Nidalee', role: '마법사/암살자', lane: '미드/정글', img: 'https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Nidalee.png', difficulty: '상' },
     { name: '쓰레쉬', engName: 'Thresh', role: '서포터', lane: '바텀', img: 'https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Thresh.png', difficulty: '상' },
-
-    //챔피언 추가
     { name: '야스오', engName: 'Yasuo', role: '전사', lane: '미드/탑', img: 'https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Yasuo.png', difficulty: '상' },
     { name: '아리', engName: 'Ahri', role: '마법사', lane: '미드', img: 'https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Ahri.png', difficulty: '중' },
     { name: '다리우스', engName: 'Darius', role: '전사', lane: '탑', img: 'https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Darius.png', difficulty: '중' }
