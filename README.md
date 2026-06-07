@@ -3,21 +3,22 @@
 
 ## 기말 과제 실습 내용
 <div align="center">
-    <img src="./screenshot/s0.png" width="45%" alt="실습 화면0">
-    <img src="./screenshot/s1.png" width="45%" alt="실습 화면1">
-    <img src="./screenshot/s2-1.png" width="45%" alt="실습 화면2-1">
-    <img src="./screenshot/s2-2.png" width="45%" alt="실습 화면2-2">
-    <img src="./screenshot/s2-3.png" width="45%" alt="실습 화면2-3">
-    <img src="./screenshot/s2-4.png" width="45%" alt="실습 화면2-4">
-    <img src="./screenshot/s3.png" width="45%" alt="실습 화면3">
-    <img src="./screenshot/s4.png" width="45%" alt="실습 화면4">
-    <img src="./screenshot/s5.png" width="45%" alt="실습 화면5">
-    <img src="./screenshot/s6.png" width="45%" alt="실습 화면6">
-    <img src="./screenshot/s7.png" width="45%" alt="실습 화면7">
-    <img src="./screenshot/s8.png"  width="45%" alt="실습 화면8">
-    <img src="./screenshot/s9.png"  width="45%" alt="실습 화면9">
-    <img src="./screenshot/s10.png"  width="45%" alt="실습 화면10">
-    <img src="./screenshot/s11.png"  width="45%" alt="실습 화면11">
+    <img src="./screenshot/s0.png" width="45%" alt="메인 페이지 화면(네비바 lol 로고 삽입 + 네비바 중앙 정렬)">
+    <img src="./screenshot/s1.png" width="45%" alt="검색창 화면 - 예시) 가렌">
+    <img src="./screenshot/s2-1.png" width="45%" alt="챔피언 카드 사진(1)">
+    <img src="./screenshot/s2-2.png" width="45%" alt="챔피언 카드 사진(2)">
+    <img src="./screenshot/s2-3.png" width="45%" alt="모달창 화면(1) - 가렌">
+    <img src="./screenshot/s2-4.png" width="45%" alt="모달창 화면(2) - 쓰레쉬">
+    <img src="./screenshot/s3.png" width="45%" alt="로그인 페이지 화면">
+    <img src="./screenshot/s4.png" width="45%" alt="로그인 실패 시 화면">
+    <img src="./screenshot/s5.png" width="45%" alt="회원가입 페이지 화면">
+    <img src="./screenshot/s6.png" width="45%" alt="로그인 성공 이후 페이지 화면">
+    <img src="./screenshot/s7.png" width="45%" alt="프로필 페이지 화면">
+    <img src="./screenshot/s8.png"  width="45%" alt="프로필 페이지 - 업로드 실패 시 화면">
+    <img src="./screenshot/s9.png"  width="45%" alt="프로필 페이지 - 개인 정보 수정, 비밀번호 변경">
+    <img src="./screenshot/s10.png"  width="45%" alt="네비바 추가 디자인">
+    <img src="./screenshot/s11.png"  width="45%" alt="다운로드 페이지">
+    <img src="./screenshot/s11.png"  width="45%" alt="다운로드 페이지-다크/라이드 적용">
 </div>
 <br>
 
