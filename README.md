@@ -3,22 +3,26 @@
 
 ## 기말 과제 실습 내용
 <div align="center">
-    <img src="./screenshot/s0.png" width="45%" alt="메인 페이지 화면(네비바 lol 로고 삽입 + 네비바 중앙 정렬)">
-    <img src="./screenshot/s1.png" width="45%" alt="검색창 화면 - 예시) 가렌">
-    <img src="./screenshot/s2-1.png" width="45%" alt="챔피언 카드 사진(1)">
-    <img src="./screenshot/s2-2.png" width="45%" alt="챔피언 카드 사진(2)">
-    <img src="./screenshot/s2-3.png" width="45%" alt="모달창 화면(1) - 가렌">
-    <img src="./screenshot/s2-4.png" width="45%" alt="모달창 화면(2) - 쓰레쉬">
-    <img src="./screenshot/s3.png" width="45%" alt="로그인 페이지 화면">
-    <img src="./screenshot/s4.png" width="45%" alt="로그인 실패 시 화면">
-    <img src="./screenshot/s5.png" width="45%" alt="회원가입 페이지 화면">
-    <img src="./screenshot/s6.png" width="45%" alt="로그인 성공 이후 페이지 화면">
-    <img src="./screenshot/s7.png" width="45%" alt="프로필 페이지 화면">
-    <img src="./screenshot/s8.png"  width="45%" alt="프로필 페이지 - 업로드 실패 시 화면">
-    <img src="./screenshot/s9.png"  width="45%" alt="프로필 페이지 - 개인 정보 수정, 비밀번호 변경">
-    <img src="./screenshot/s10.png"  width="45%" alt="네비바 추가 디자인">
-    <img src="./screenshot/s11.png"  width="45%" alt="다운로드 페이지">
-    <img src="./screenshot/s12.png"  width="45%" alt="다운로드 페이지-다크/라이드 적용">
+    <img src="./screenshot/s1.png" width="45%" alt="메인 페이지 화면(네비바 lol 로고 삽입 + 네비바 중앙 정렬)">
+    <img src="./screenshot/s2.png" width="45%" alt="검색창 화면 - 예시) 가렌">
+    <img src="./screenshot/s3.png" width="45%" alt="챔피언 카드 사진(1)">
+    <img src="./screenshot/s4.png" width="45%" alt="챔피언 카드 사진(2)">
+    <img src="./screenshot/s5.png" width="45%" alt="모달창 화면(1) - 가렌">
+    <img src="./screenshot/s6.png" width="45%" alt="모달창 화면(2) - 쓰레쉬">
+    <img src="./screenshot/s7.png" width="45%" alt="로그인 페이지 화면">
+    <img src="./screenshot/s8.png" width="45%" alt="로그인 실패 시 화면">
+    <img src="./screenshot/s9.png" width="45%" alt="회원가입 예시(1)">
+    <img src="./screenshot/s10.png" width="45%" alt="회원가입 예시(2)">
+    <img src="./screenshot/s11.png" width="45%" alt="회원가입 예시(3)">
+    <img src="./screenshot/s12.png" width="45%" alt="회원가입 예시(4)">
+    <img src="./screenshot/s13.png" width="45%" alt="로그인 성공 이후 페이지 화면">
+    <img src="./screenshot/s14.png" width="45%" alt="프로필 페이지 화면">
+    <img src="./screenshot/s15.png"  width="45%" alt="프로필 페이지 - 업로드 실패 시 화면">
+    <img src="./screenshot/s16.png"  width="45%" alt="프로필 페이지 - 개인 정보 수정, 비밀번호 변경 (1)">
+    <img src="./screenshot/s17.png"  width="45%" alt="프로필 페이지 - 개인 정보 수정, 비밀번호 변경 (2)">
+    <img src="./screenshot/s18.png"  width="45%" alt="네비바 추가 디자인">
+    <img src="./screenshot/s19.png"  width="45%" alt="다운로드 페이지">
+    <img src="./screenshot/s20.png"  width="45%" alt="다운로드 페이지-라이트 모드 적용">
 </div>
 <br>
 
