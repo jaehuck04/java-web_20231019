@@ -16,11 +16,11 @@
     <img src="./screenshot/s11.png" width="45%" alt="회원가입 예시(3)">
     <img src="./screenshot/s12.png" width="45%" alt="회원가입 예시(4)">
     <img src="./screenshot/s13.png" width="45%" alt="로그인 성공 이후 페이지 화면">
-    <img src="./screenshot/s14.png" width="45%" alt="프로필 페이지 화면">
-    <img src="./screenshot/s15.png"  width="45%" alt="프로필 페이지 - 업로드 실패 시 화면">
-    <img src="./screenshot/s16.png"  width="45%" alt="프로필 페이지 - 개인 정보 수정, 비밀번호 변경 (1)">
-    <img src="./screenshot/s17.png"  width="45%" alt="프로필 페이지 - 개인 정보 수정, 비밀번호 변경 (2)">
-    <img src="./screenshot/s18.png"  width="45%" alt="네비바 추가 디자인">
+    <img src="./screenshot/s14.png"  width="45%" alt="네비바 추가 디자인">
+    <img src="./screenshot/s15.png" width="45%" alt="프로필 페이지 화면">
+    <img src="./screenshot/s16.png"  width="45%" alt="프로필 페이지 - 업로드 실패 시 화면">
+    <img src="./screenshot/s17.png"  width="45%" alt="프로필 페이지 - 개인 정보 수정, 비밀번호 변경 (1)">
+    <img src="./screenshot/s18.png"  width="45%" alt="프로필 페이지 - 개인 정보 수정, 비밀번호 변경 (2)">
     <img src="./screenshot/s19.png"  width="45%" alt="다운로드 페이지">
     <img src="./screenshot/s20.png"  width="45%" alt="다운로드 페이지-라이트 모드 적용">
 </div>
